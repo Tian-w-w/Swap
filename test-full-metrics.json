@@ -1,0 +1,623 @@
+{
+  "adapter_path": "/home/wangzhengrui/fi-lit/outputs/qlora_ddp_superni-100-chat/checkpoint-200",
+  "config_path": "configs/server_qlora.yaml",
+  "examples": 11810,
+  "generation": {
+    "batch_size": 4,
+    "decoding": "greedy",
+    "max_input_tokens": 2048,
+    "max_new_tokens": 128
+  },
+  "macro_by_task": {
+    "exact_match": 0.42765906362545014,
+    "rouge_l": 0.5797544084376216
+  },
+  "manifest_path": "/home/wangzhengrui/fi-lit/manifests/superni-100-test.jsonl",
+  "metric_note": "Exact Match is case/whitespace-normalized. ROUGE-L is whitespace-token F1 against the best reference.",
+  "micro": {
+    "exact_match": 0.4308213378492803,
+    "rouge_l": 0.5832844521153641
+  },
+  "per_task": {
+    "task020_mctaco_span_based_question": {
+      "exact_match": 0.19,
+      "examples": 100,
+      "rouge_l": 0.19
+    },
+    "task033_winogrande_answer_generation": {
+      "exact_match": 0.72,
+      "examples": 100,
+      "rouge_l": 0.7266666666666667
+    },
+    "task034_winogrande_question_modification_object": {
+      "exact_match": 0.29,
+      "examples": 100,
+      "rouge_l": 0.9277024242468941
+    },
+    "task035_winogrande_question_modification_person": {
+      "exact_match": 0.16,
+      "examples": 100,
+      "rouge_l": 0.8684740313908474
+    },
+    "task036_qasc_topic_word_to_generate_related_fact": {
+      "exact_match": 0.0,
+      "examples": 100,
+      "rouge_l": 0.5515714285714279
+    },
+    "task039_qasc_find_overlapping_words": {
+      "exact_match": 0.78,
+      "examples": 100,
+      "rouge_l": 0.8133333333333332
+    },
+    "task050_multirc_answerability": {
+      "exact_match": 0.0,
+      "examples": 100,
+      "rouge_l": 0.0
+    },
+    "task102_commongen_sentence_generation": {
+      "exact_match": 0.0,
+      "examples": 100,
+      "rouge_l": 0.3993411652821731
+    },
+    "task1152_bard_analogical_reasoning_causation": {
+      "exact_match": 0.51,
+      "examples": 100,
+      "rouge_l": 0.51
+    },
+    "task1153_bard_analogical_reasoning_affordance": {
+      "exact_match": 0.42,
+      "examples": 100,
+      "rouge_l": 0.42
+    },
+    "task1154_bard_analogical_reasoning_travel": {
+      "exact_match": 0.28,
+      "examples": 100,
+      "rouge_l": 0.28
+    },
+    "task1155_bard_analogical_reasoning_trash_or_treasure": {
+      "exact_match": 0.84,
+      "examples": 100,
+      "rouge_l": 0.84
+    },
+    "task1156_bard_analogical_reasoning_tools": {
+      "exact_match": 0.47,
+      "examples": 100,
+      "rouge_l": 0.5233333333333333
+    },
+    "task1157_bard_analogical_reasoning_rooms_for_containers": {
+      "exact_match": 0.65,
+      "examples": 100,
+      "rouge_l": 0.65
+    },
+    "task1158_bard_analogical_reasoning_manipulating_items": {
+      "exact_match": 0.4,
+      "examples": 100,
+      "rouge_l": 0.4333333333333333
+    },
+    "task1159_bard_analogical_reasoning_containers": {
+      "exact_match": 0.65,
+      "examples": 100,
+      "rouge_l": 0.69
+    },
+    "task1161_coda19_title_generation": {
+      "exact_match": 0.03,
+      "examples": 100,
+      "rouge_l": 0.4060336995747676
+    },
+    "task1195_disflqa_disfluent_to_fluent_conversion": {
+      "exact_match": 0.35,
+      "examples": 100,
+      "rouge_l": 0.8508479440093493
+    },
+    "task121_zest_text_modification": {
+      "exact_match": 0.0,
+      "examples": 100,
+      "rouge_l": 0.42968520534548843
+    },
+    "task133_winowhy_reason_plausibility_detection": {
+      "exact_match": 0.8,
+      "examples": 100,
+      "rouge_l": 0.8
+    },
+    "task1342_amazon_us_reviews_title": {
+      "exact_match": 0.0,
+      "examples": 100,
+      "rouge_l": 0.1175870421848683
+    },
+    "task1344_glue_entailment_classification": {
+      "exact_match": 0.81,
+      "examples": 100,
+      "rouge_l": 0.81
+    },
+    "task1345_glue_qqp_question_paraprashing": {
+      "exact_match": 0.0,
+      "examples": 100,
+      "rouge_l": 0.28291618625427883
+    },
+    "task1356_xlsum_title_generation": {
+      "exact_match": 0.0,
+      "examples": 100,
+      "rouge_l": 0.24481514737756208
+    },
+    "task1358_xlsum_title_generation": {
+      "exact_match": 0.0,
+      "examples": 100,
+      "rouge_l": 0.26974693040018094
+    },
+    "task1385_anli_r1_entailment": {
+      "exact_match": 0.62,
+      "examples": 100,
+      "rouge_l": 0.62
+    },
+    "task1386_anli_r2_entailment": {
+      "exact_match": 0.51,
+      "examples": 100,
+      "rouge_l": 0.51
+    },
+    "task1387_anli_r3_entailment": {
+      "exact_match": 0.42,
+      "examples": 100,
+      "rouge_l": 0.42
+    },
+    "task1388_cb_entailment": {
+      "exact_match": 0.86,
+      "examples": 100,
+      "rouge_l": 0.86
+    },
+    "task1390_wscfixed_coreference": {
+      "exact_match": 0.61,
+      "examples": 100,
+      "rouge_l": 0.61
+    },
+    "task1391_winogrande_easy_answer_generation": {
+      "exact_match": 0.77,
+      "examples": 100,
+      "rouge_l": 0.77
+    },
+    "task1393_superglue_copa_text_completion": {
+      "exact_match": 0.89,
+      "examples": 100,
+      "rouge_l": 0.89
+    },
+    "task1394_meta_woz_task_classification": {
+      "exact_match": 0.75,
+      "examples": 100,
+      "rouge_l": 0.75
+    },
+    "task1407_dart_question_generation": {
+      "exact_match": 0.0,
+      "examples": 100,
+      "rouge_l": 0.24786925552133293
+    },
+    "task1409_dart_text_generation": {
+      "exact_match": 0.02,
+      "examples": 100,
+      "rouge_l": 0.4817847206053586
+    },
+    "task1439_doqa_cooking_isanswerable": {
+      "exact_match": 0.63,
+      "examples": 100,
+      "rouge_l": 0.63
+    },
+    "task1442_doqa_movies_isanswerable": {
+      "exact_match": 0.44,
+      "examples": 100,
+      "rouge_l": 0.44
+    },
+    "task1516_imppres_naturallanguageinference": {
+      "exact_match": 0.49,
+      "examples": 100,
+      "rouge_l": 0.49
+    },
+    "task1529_scitail1.1_classification": {
+      "exact_match": 0.89,
+      "examples": 100,
+      "rouge_l": 0.89
+    },
+    "task1531_daily_dialog_type_classification": {
+      "exact_match": 0.73,
+      "examples": 100,
+      "rouge_l": 0.73
+    },
+    "task1533_daily_dialog_formal_classification": {
+      "exact_match": 0.71,
+      "examples": 100,
+      "rouge_l": 0.71
+    },
+    "task1534_daily_dialog_question_classification": {
+      "exact_match": 0.74,
+      "examples": 100,
+      "rouge_l": 0.74
+    },
+    "task1540_parsed_pdfs_summarization": {
+      "exact_match": 0.06,
+      "examples": 100,
+      "rouge_l": 0.40790416670420704
+    },
+    "task1554_scitail_classification": {
+      "exact_match": 0.92,
+      "examples": 100,
+      "rouge_l": 0.92
+    },
+    "task1557_jfleg_answer_generation": {
+      "exact_match": 0.06,
+      "examples": 100,
+      "rouge_l": 0.771323206347422
+    },
+    "task1562_zest_text_modification": {
+      "exact_match": 0.0,
+      "examples": 100,
+      "rouge_l": 0.4498784867998328
+    },
+    "task1586_scifact_title_generation": {
+      "exact_match": 0.0,
+      "examples": 100,
+      "rouge_l": 0.34111281032792434
+    },
+    "task1598_nyc_long_text_generation": {
+      "exact_match": 0.0,
+      "examples": 100,
+      "rouge_l": 0.30114978827226807
+    },
+    "task1612_sick_label_classification": {
+      "exact_match": 0.81,
+      "examples": 100,
+      "rouge_l": 0.81
+    },
+    "task1615_sick_tclassify_b_relation_a": {
+      "exact_match": 0.8,
+      "examples": 100,
+      "rouge_l": 0.8
+    },
+    "task1622_disfl_qa_text_modication": {
+      "exact_match": 0.32,
+      "examples": 100,
+      "rouge_l": 0.8307868482046041
+    },
+    "task1624_disfl_qa_question_yesno_classification": {
+      "exact_match": 0.0,
+      "examples": 100,
+      "rouge_l": 0.0
+    },
+    "task1631_openpi_answer_generation": {
+      "exact_match": 0.0,
+      "examples": 100,
+      "rouge_l": 0.27594350194034517
+    },
+    "task1640_aqa1.0_answerable_unanswerable_question_classification": {
+      "exact_match": 0.65,
+      "examples": 100,
+      "rouge_l": 0.65
+    },
+    "task1659_title_generation": {
+      "exact_match": 0.31,
+      "examples": 100,
+      "rouge_l": 0.4636545254119953
+    },
+    "task1664_winobias_text_generation": {
+      "exact_match": 0.0,
+      "examples": 100,
+      "rouge_l": 0.45059523809523766
+    },
+    "task1728_web_nlg_data_to_text": {
+      "exact_match": 0.11,
+      "examples": 100,
+      "rouge_l": 0.6348823958098139
+    },
+    "task190_snli_classification": {
+      "exact_match": 0.4,
+      "examples": 100,
+      "rouge_l": 0.4
+    },
+    "task199_mnli_classification": {
+      "exact_match": 0.51,
+      "examples": 100,
+      "rouge_l": 0.51
+    },
+    "task200_mnli_entailment_classification": {
+      "exact_match": 0.89,
+      "examples": 100,
+      "rouge_l": 0.89
+    },
+    "task201_mnli_neutral_classification": {
+      "exact_match": 0.18,
+      "examples": 100,
+      "rouge_l": 0.18
+    },
+    "task202_mnli_contradiction_classification": {
+      "exact_match": 0.97,
+      "examples": 100,
+      "rouge_l": 0.97
+    },
+    "task219_rocstories_title_answer_generation": {
+      "exact_match": 0.13,
+      "examples": 100,
+      "rouge_l": 0.30519047619047623
+    },
+    "task220_rocstories_title_classification": {
+      "exact_match": 1.0,
+      "examples": 100,
+      "rouge_l": 1.0
+    },
+    "task226_english_language_answer_relevance_classification": {
+      "exact_match": 0.66,
+      "examples": 100,
+      "rouge_l": 0.66
+    },
+    "task232_iirc_link_number_classification": {
+      "exact_match": 0.75,
+      "examples": 100,
+      "rouge_l": 0.75
+    },
+    "task233_iirc_link_exists_classification": {
+      "exact_match": 0.7,
+      "examples": 100,
+      "rouge_l": 0.7
+    },
+    "task242_tweetqa_classification": {
+      "exact_match": 0.98,
+      "examples": 100,
+      "rouge_l": 0.98
+    },
+    "task249_enhanced_wsc_pronoun_disambiguation": {
+      "exact_match": 0.2,
+      "examples": 100,
+      "rouge_l": 0.5454444444444441
+    },
+    "task281_points_of_correspondence": {
+      "exact_match": 0.04,
+      "examples": 100,
+      "rouge_l": 0.5795818451536183
+    },
+    "task288_gigaword_summarization": {
+      "exact_match": 0.0,
+      "examples": 100,
+      "rouge_l": 0.2744982543665366
+    },
+    "task290_tellmewhy_question_answerability": {
+      "exact_match": 0.69,
+      "examples": 100,
+      "rouge_l": 0.8966666666666668
+    },
+    "task304_numeric_fused_head_resolution": {
+      "exact_match": 0.29,
+      "examples": 100,
+      "rouge_l": 0.4396666666666666
+    },
+    "task329_gap_classification": {
+      "exact_match": 0.71,
+      "examples": 100,
+      "rouge_l": 0.71
+    },
+    "task330_gap_answer_generation": {
+      "exact_match": 0.54,
+      "examples": 100,
+      "rouge_l": 0.6513809523809522
+    },
+    "task349_squad2.0_answerable_unanswerable_question_classification": {
+      "exact_match": 0.8,
+      "examples": 100,
+      "rouge_l": 0.8
+    },
+    "task362_spolin_yesand_prompt_response_sub_classification": {
+      "exact_match": 0.81,
+      "examples": 100,
+      "rouge_l": 0.905
+    },
+    "task391_causal_relationship": {
+      "exact_match": 0.57,
+      "examples": 100,
+      "rouge_l": 0.856666666666667
+    },
+    "task392_inverse_causal_relationship": {
+      "exact_match": 0.82,
+      "examples": 100,
+      "rouge_l": 0.9399999999999998
+    },
+    "task393_plausible_result_generation": {
+      "exact_match": 0.02,
+      "examples": 100,
+      "rouge_l": 0.4364387524240463
+    },
+    "task401_numeric_fused_head_reference": {
+      "exact_match": 0.41,
+      "examples": 100,
+      "rouge_l": 0.4733333333333333
+    },
+    "task402_grailqa_paraphrase_generation": {
+      "exact_match": 0.08,
+      "examples": 100,
+      "rouge_l": 0.6889776795539184
+    },
+    "task418_persent_title_generation": {
+      "exact_match": 0.0,
+      "examples": 100,
+      "rouge_l": 0.23996111604111994
+    },
+    "task442_com_qa_paraphrase_question_generation": {
+      "exact_match": 0.04,
+      "examples": 100,
+      "rouge_l": 0.6205579725527156
+    },
+    "task500_scruples_anecdotes_title_generation": {
+      "exact_match": 0.0,
+      "examples": 100,
+      "rouge_l": 0.23189770416983704
+    },
+    "task510_reddit_tifu_title_summarization": {
+      "exact_match": 0.0,
+      "examples": 100,
+      "rouge_l": 0.3437971726107463
+    },
+    "task520_aquamuse_answer_given_in_passage": {
+      "exact_match": 0.94,
+      "examples": 100,
+      "rouge_l": 0.94
+    },
+    "task569_recipe_nlg_text_generation": {
+      "exact_match": 0.1,
+      "examples": 100,
+      "rouge_l": 0.3710174008997539
+    },
+    "task602_wikitext-103_answer_generation": {
+      "exact_match": 0.07142857142857142,
+      "examples": 84,
+      "rouge_l": 0.1060179449535014
+    },
+    "task613_politifact_text_generation": {
+      "exact_match": 0.15,
+      "examples": 100,
+      "rouge_l": 0.15666666666666665
+    },
+    "task614_glucose_cause_event_detection": {
+      "exact_match": 0.0,
+      "examples": 100,
+      "rouge_l": 0.3257756451728636
+    },
+    "task619_ohsumed_abstract_title_generation": {
+      "exact_match": 0.01,
+      "examples": 100,
+      "rouge_l": 0.3494010509493898
+    },
+    "task620_ohsumed_medical_subject_headings_answer_generation": {
+      "exact_match": 0.24,
+      "examples": 100,
+      "rouge_l": 0.4142380952380952
+    },
+    "task623_ohsumed_yes_no_answer_generation": {
+      "exact_match": 1.0,
+      "examples": 100,
+      "rouge_l": 1.0
+    },
+    "task640_esnli_classification": {
+      "exact_match": 0.59,
+      "examples": 100,
+      "rouge_l": 0.59
+    },
+    "task641_esnli_classification": {
+      "exact_match": 0.56,
+      "examples": 100,
+      "rouge_l": 0.56
+    },
+    "task642_esnli_classification": {
+      "exact_match": 0.62,
+      "examples": 100,
+      "rouge_l": 0.62
+    },
+    "task645_summarization": {
+      "exact_match": 0.86,
+      "examples": 100,
+      "rouge_l": 0.9391746031746032
+    },
+    "task648_answer_generation": {
+      "exact_match": 0.31,
+      "examples": 100,
+      "rouge_l": 0.48252380952380947
+    },
+    "task670_ambigqa_question_generation": {
+      "exact_match": 0.02,
+      "examples": 100,
+      "rouge_l": 0.6010956827795959
+    },
+    "task671_ambigqa_text_generation": {
+      "exact_match": 0.0,
+      "examples": 100,
+      "rouge_l": 0.5019652287697614
+    },
+    "task677_ollie_sentence_answer_generation": {
+      "exact_match": 0.0,
+      "examples": 100,
+      "rouge_l": 0.21307329056228105
+    },
+    "task738_perspectrum_classification": {
+      "exact_match": 0.53,
+      "examples": 100,
+      "rouge_l": 0.53
+    },
+    "task743_eurlex_summarization": {
+      "exact_match": 0.0,
+      "examples": 100,
+      "rouge_l": 0.4114473436639108
+    },
+    "task760_msr_sqa_long_text_generation": {
+      "exact_match": 0.0,
+      "examples": 26,
+      "rouge_l": 0.11880802440552733
+    },
+    "task769_qed_summarization": {
+      "exact_match": 0.88,
+      "examples": 100,
+      "rouge_l": 0.9403174603174602
+    },
+    "task827_copa_commonsense_reasoning": {
+      "exact_match": 0.96,
+      "examples": 100,
+      "rouge_l": 0.96
+    },
+    "task828_copa_commonsense_cause_effect": {
+      "exact_match": 0.75,
+      "examples": 100,
+      "rouge_l": 0.75
+    },
+    "task879_schema_guided_dstc8_classification": {
+      "exact_match": 0.81,
+      "examples": 100,
+      "rouge_l": 0.81
+    },
+    "task880_schema_guided_dstc8_classification": {
+      "exact_match": 0.58,
+      "examples": 100,
+      "rouge_l": 0.58
+    },
+    "task890_gcwd_classification": {
+      "exact_match": 0.46,
+      "examples": 100,
+      "rouge_l": 0.5266666666666666
+    },
+    "task891_gap_coreference_resolution": {
+      "exact_match": 0.64,
+      "examples": 100,
+      "rouge_l": 0.7236666666666666
+    },
+    "task892_gap_reverse_coreference_resolution": {
+      "exact_match": 0.5,
+      "examples": 100,
+      "rouge_l": 0.5
+    },
+    "task893_gap_fill_the_blank_coreference_resolution": {
+      "exact_match": 0.63,
+      "examples": 100,
+      "rouge_l": 0.63
+    },
+    "task935_defeasible_nli_atomic_classification": {
+      "exact_match": 0.8,
+      "examples": 100,
+      "rouge_l": 0.8
+    },
+    "task936_defeasible_nli_snli_classification": {
+      "exact_match": 0.76,
+      "examples": 100,
+      "rouge_l": 0.76
+    },
+    "task937_defeasible_nli_social_classification": {
+      "exact_match": 0.68,
+      "examples": 100,
+      "rouge_l": 0.68
+    },
+    "task957_e2e_nlg_text_generation_generate": {
+      "exact_match": 0.0,
+      "examples": 100,
+      "rouge_l": 0.40758650509982014
+    },
+    "task970_sherliic_causal_relationship": {
+      "exact_match": 0.78,
+      "examples": 100,
+      "rouge_l": 0.78
+    }
+  },
+  "predictions_path": "/home/wangzhengrui/fi-lit/outputs/eval-chat/test-full-predictions.jsonl",
+  "tasks": 119
+}
+
+
+1
